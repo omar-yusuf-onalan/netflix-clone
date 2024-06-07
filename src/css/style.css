@@ -28,5 +28,12 @@
     flex: 1;
     display: flex;
     justify-content: right;
+    align-items: center;
+    gap: 20px;
     padding-right: 40px;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
 }
