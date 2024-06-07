@@ -1,66 +1,53 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Netflix</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Netflix</title>
+</head>
     <body>
-        <header class="header-container sticky">
-            <div class="header-left">
-                <!--     netflix logo       -->
-                <img class="netflix-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" alt="Netflix Logo"/>
-
-                <!--     links       -->
-                <div class="links">
-                    <a>Home</a>
-                    <a>TV shows</a>
-                    <a>Movies</a>
-                    <a>New & Popular</a>
-                    <a>My List</a>
-                    <a>Browse by Languages</a>
+        <section class="background">
+            <header class="header-container sticky">
+                <div class="header-left">
+                    <img class="netflix-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" alt="Netflix Logo"/>
+                    <div class="links">
+                        <a href="#">Home</a>
+                        <a href="#">TV shows</a>
+                        <a href="#">Movies</a>
+                        <a href="#">New & Popular</a>
+                        <a href="#">My List</a>
+                        <a href="#">Browse by Languages</a>
+                    </div>
                 </div>
-            </div>
+                <div class="header-right">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div>Children</div>
+                    <i class="fa-regular fa-bell"></i>
+                    <img class="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Profile Picture"/>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </header>
 
-            <div class="header-right">
-                <!--      user options     -->
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <div>Children</div>
-                <i class="fa-regular fa-bell"></i>
-                <img class="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Profile Picture"/>
-                <i class="fa-solid fa-caret-down"></i>
-            </div>
+            <section class="hero">
+                <h1>Godzilla Minus One</h1>
+                <div class="hero-buttons">
+                    <button class="play-button"><i class="fa-solid fa-play"></i> Play</button>
+                    <button class="more-info-button"><i class="fa-solid fa-circle-info"></i> More Info</button>
+                </div>
+                <p>
+                    In postwar Japan, Godzilla brings new devastation to an already scorched landscape. With no military intervention or government help in sight, the survivors must join together in the face of despair and fight back against an unrelenting horror.
+                </p>
+            </section>
 
-        </header>
-
-
-        <section class="hero">
-            
-            <!--       hero     -->
-
-            <h1>Godzilla Minus One</h1>
-
-            <div class="hero-buttons">
-                <button class="play-button"><i class="fa-solid fa-play"></i> Play</button>
-                <button class="more-info-button"><i class="fa-solid fa-circle-info"></i> More Info</button>
-            </div>
-
-
-            <p>
-                In postwar Japan, Godzilla brings new devastation to an already scorched landscape. With no military intervention or government help in sight, the survivors must join together in the face of despair and fight back against an unrelenting horror.
-            </p>
-        </section>
-
-        <section>
-            
-            <!--      show slider      -->
+            <section class="sliding-shows">
+                <img alt="" src=""/>
+                <img alt="" src=""/>
+                <img alt="" src=""/>
+            </section>
         </section>
     </body>
 </html>

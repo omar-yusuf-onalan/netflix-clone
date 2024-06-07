@@ -5,6 +5,26 @@
 }
 
 /* Header */
+.background {
+    position: relative;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh;
+    background: url('https://imageio.forbes.com/specials-images/imageserve/660c33d184d7384d2228e25f/0x0.jpg?format=jpg&crop=1393,928,x96,y0,safe&height=900&width=1600&fit=bounds') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.background > * {
+    position: relative;
+    z-index: 1;
+}
 
 .header-container {
     display: flex;
@@ -16,7 +36,7 @@
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
 }
 
 .header-left {
@@ -25,7 +45,6 @@
     justify-content: start;
     align-items: center;
     gap: 60px;
-
     padding-left: 40px;
 }
 
@@ -55,24 +74,17 @@
     height: 40px;
 }
 
-/* Header*/
+/* Header */
 
-/* Hero*/
-
+/* Hero */
 .hero {
-    background-image: url("https://imageio.forbes.com/specials-images/imageserve/660c33d184d7384d2228e25f/0x0.jpg?format=jpg&crop=1393,928,x96,y0,safe&height=900&width=1600&fit=boundsg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 90vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     gap: 40px;
-
     padding-left: 80px;
+    height: 80vh;
 }
 
 .hero div {
@@ -94,8 +106,15 @@
     background: darkgray;
     padding: 10px;
 }
+
 .hero p {
     width: 30vw;
 }
 
-/* Hero*/
+/* Hero */
+
+/* Sliding Shows */
+.sliding-shows {
+    height: 20vh;
+}
+/* Sliding Shows */
