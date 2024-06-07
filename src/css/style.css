@@ -4,6 +4,8 @@
     font-size: 16px;
 }
 
+/* Header */
+
 .header-container {
     display: flex;
     justify-content: space-around;
@@ -33,7 +35,10 @@
 }
 
 .links {
-
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-weight: bold;
 }
 
 .header-right {
@@ -49,3 +54,48 @@
     width: 40px;
     height: 40px;
 }
+
+/* Header*/
+
+/* Hero*/
+
+.hero {
+    background-image: url("https://imageio.forbes.com/specials-images/imageserve/660c33d184d7384d2228e25f/0x0.jpg?format=jpg&crop=1393,928,x96,y0,safe&height=900&width=1600&fit=boundsg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+
+    padding-left: 80px;
+}
+
+.hero div {
+    width: 500px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-buttons button {
+    background: darkgray;
+    padding: 10px;
+}
+.hero p {
+    width: 30vw;
+}
+
+/* Hero*/
