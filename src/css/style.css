@@ -8,8 +8,11 @@
 .header-left {
     flex: 2;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
+    gap: 60px;
+
+    padding-left: 40px;
 }
 
 .netflix-logo {
@@ -25,5 +28,5 @@
     flex: 1;
     display: flex;
     justify-content: right;
-    padding-right: 10px;
+    padding-right: 40px;
 }
