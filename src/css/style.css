@@ -4,6 +4,11 @@
     font-size: 16px;
 }
 
+body {
+    overflow-x: hidden;
+    background: black;
+}
+
 /* Header */
 .background {
     position: relative;
@@ -60,6 +65,10 @@
     font-weight: bold;
 }
 
+.links a {
+    text-decoration: none;
+}
+
 .header-right {
     flex: 1;
     display: flex;
@@ -92,7 +101,7 @@
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .hero-buttons {
@@ -108,13 +117,81 @@
 }
 
 .hero p {
-    width: 30vw;
+    width: 25vw;
 }
 
 /* Hero */
 
-/* Sliding Shows */
-.sliding-shows {
-    height: 20vh;
+/* Netflix Originals */
+
+.netflix-originals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+
+    padding-left: 40px;
 }
-/* Sliding Shows */
+
+.netflix-originals h2 {
+    font-size: 1.5rem;
+}
+
+.sliding-shows {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+    overflow: auto;
+}
+
+.sliding-shows::-webkit-scrollbar {
+    display: none;
+}
+
+.sliding-shows img {
+    display: inline-block;
+    width: 175px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+/* Netflix Originals */
+
+/* Top Rated */
+
+.top-rated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+
+    padding-left: 40px;
+}
+
+.top-rated h2 {
+    font-size: 1.5rem;
+}
+
+/* Top Rated */
+
+/* Family Movies */
+
+.family-movies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+
+    padding-left: 40px;
+}
+
+.family-movies h2 {
+    font-size: 1.5rem;
+}
+
+/* Family Movies */
