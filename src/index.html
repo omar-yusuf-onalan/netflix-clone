@@ -43,11 +43,73 @@
                 </p>
             </section>
 
-            <section class="sliding-shows">
-                <img alt="" src=""/>
-                <img alt="" src=""/>
-                <img alt="" src=""/>
+            <section class="netflix-originals">
+                <h2>Netflix Originals</h2>
+
+                <div class="sliding-shows">
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/iADOJ8Zymht2JPMoy3R7xceZprc.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/mztdt3y6GBsJR69zHtszFezTCLT.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/vlHJfLsduZiILN8eYdN57kHZTcQ.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/bcM2Tl5HlsvPBnL8DKP9Ie6vU4r.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/z1p34vh7dEOnLDmyCrlUVLuoDzd.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/tSz1qsmSJon0rqjHBxXZmrotuse.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/uGyiewQnDHPuiHN9V4k2t9QBPnh.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/8FHthx4Vu81J4X5BTLhJYK9Gtbs.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/gAEUXC37vl1SnM7PXsHTF23I2vq.jpg"/>
+                </div>
+
             </section>
+
+            <section class="top-rated">
+                <h2>Netflix Originals</h2>
+
+                <div class="sliding-shows">
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/iADOJ8Zymht2JPMoy3R7xceZprc.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/mztdt3y6GBsJR69zHtszFezTCLT.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/vlHJfLsduZiILN8eYdN57kHZTcQ.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/bcM2Tl5HlsvPBnL8DKP9Ie6vU4r.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/z1p34vh7dEOnLDmyCrlUVLuoDzd.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/tSz1qsmSJon0rqjHBxXZmrotuse.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/uGyiewQnDHPuiHN9V4k2t9QBPnh.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/8FHthx4Vu81J4X5BTLhJYK9Gtbs.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/gAEUXC37vl1SnM7PXsHTF23I2vq.jpg"/>
+                </div>
+
+            </section>
+
+            <section class="family-movies">
+                <h2>Netflix Originals</h2>
+
+                <div class="sliding-shows">
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/iADOJ8Zymht2JPMoy3R7xceZprc.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/mztdt3y6GBsJR69zHtszFezTCLT.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/vlHJfLsduZiILN8eYdN57kHZTcQ.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/bcM2Tl5HlsvPBnL8DKP9Ie6vU4r.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/z1p34vh7dEOnLDmyCrlUVLuoDzd.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/tSz1qsmSJon0rqjHBxXZmrotuse.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/uGyiewQnDHPuiHN9V4k2t9QBPnh.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/8FHthx4Vu81J4X5BTLhJYK9Gtbs.jpg"/>
+                    <img alt="" src="https://image.tmdb.org/t/p/w300/gAEUXC37vl1SnM7PXsHTF23I2vq.jpg"/>
+                </div>
+
+            </section>
+            
         </section>
+        <script>
+            const shows = document.getElementsByClassName("sliding-shows");
+
+            Array.from(shows).forEach(show => show.addEventListener('wheel', (event) => {
+                if (event.deltaY !== 0) {
+                    event.preventDefault();
+                    show.scrollLeft += event.deltaY;
+                }
+            }));
+        </script>
     </body>
 </html>
