@@ -112,14 +112,19 @@ body {
 
 .hero-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+
+    padding-left: 20px;
 }
 
 .hero-buttons button {
-    background: darkgray;
-    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background: dimgray;
+    padding: 15px 25px 15px 25px;
+
 }
 
 .hero p {
