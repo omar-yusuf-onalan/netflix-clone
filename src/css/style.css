@@ -9,7 +9,6 @@ body {
     background: black;
 }
 
-/* Header */
 .background {
     position: relative;
 }
@@ -30,6 +29,13 @@ body {
     position: relative;
     z-index: 1;
 }
+
+.space {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Header */
 
 .header-container {
     display: flex;
